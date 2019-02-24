@@ -39,6 +39,7 @@
 <style lang="scss" scoped>
 .app-container {
   padding-top: 40px;
+  // 解决横向的滚动条
   overflow-x: hidden;
 }
 .v-enter{
