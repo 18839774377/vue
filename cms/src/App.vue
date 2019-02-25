@@ -39,6 +39,7 @@
 <style lang="scss" scoped>
 .app-container {
   padding-top: 40px;
+  padding-bottom: 50px;
   // 解决横向的滚动条
   overflow-x: hidden;
 }

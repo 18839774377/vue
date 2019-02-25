@@ -6,11 +6,20 @@ import VueRouter from 'vue-router'
 // 1.2 安装路由
 Vue.use(VueRouter)
 
+// 导入格式化时间的插件
+import moment from 'moment'
+// 定义全局的过滤器
+Vue.filter('dataFormat',function(dataStr,pattern="YYYY-MM-DD HH:mm:ss"){
+    return moment(dataStr).format(pattern)
+})
+
 // 2.1导入Vue-resource
 import VueResource from 'vue-resource'
-Vue.use(VueResource)
-
 // 2.2安装
+Vue.use(VueResource)
+// 设置请求的
+Vue.http.options.root = "http://www.liulongbin.top:3005";
+
 
 
 // 导入 MUI 的样式
